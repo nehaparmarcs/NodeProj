@@ -49,8 +49,9 @@ MongoClient.connect("mongodb://52.40.169.146:27017,52.40.170.239:27017,52.35.25.
 	 	var collection =  database.collection("testdb");
 		
 		var doc1 = {"hello":"Hello World #1"};
+		var doc2 = {"hello":"Hello World #1"};
 		  
-		  collection.insert(doc1 , function (err, result) {
+		  collection.insert(doc2 , function (err, result) {
 		      if (err) {
 		          console.log(err);
 		        } else {
@@ -60,7 +61,7 @@ MongoClient.connect("mongodb://52.40.169.146:27017,52.40.170.239:27017,52.35.25.
 		        //db.close();
 		      });
 	  
-		return res.send(JSON.stringify(doc1));
+		return res.send(JSON.stringify(doc2));
 	  }
   
 	  );
