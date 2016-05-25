@@ -48,7 +48,7 @@ MongoClient.connect("mongodb://52.40.169.146:27017,52.40.170.239:27017,52.35.25.
 	  
 	 	var collection =  database.collection("testdb");
 		
-		var doc1 = {"hello":"doc2"};
+		var doc1 = {"hello":"Hello World #1"};
 		  
 		  collection.insert(doc1 , function (err, result) {
 		      if (err) {
